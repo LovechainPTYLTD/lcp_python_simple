@@ -6,7 +6,7 @@ from LCPkeyManagement import keyManagement as keys
 from LCPkeyManagement import Addresses as addresses
 import base64
 
-async def connection(uri="ws://13.59.6.90"):
+async def connection(uri="ws://hub00.lovecoinplus.com"):
     async with websockets.connect(uri) as websocket:
         while True:
             message = await websocket.recv()
